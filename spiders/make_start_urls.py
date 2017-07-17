@@ -1,12 +1,12 @@
-from .info import Info
+from .info import Info_Depart
 from urllib.parse import urlencode
 
 
 
 def start_request():
     all_start_links = []
-    all_city = Info.city_info
-    all_job = Info.job_info
+    all_city = Info_Depart.city_info_1
+    all_job = Info_Depart.job_info
     base_url = 'https://m.zhaopin.com/searchjob/search'
     form_data = {
         'KeyWord': '',
